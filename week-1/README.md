@@ -51,3 +51,51 @@ This exercise is intended to demonstrate how to install Angular's CLI and create
 
 ---
 
+## Exercise 1.4 - TypeScript
+
+* Create a new directory and name it `ts-examples`
+
+                mkdir ts-examples
+
+* Create a new npm package.json file: 
+
+                npm init
+
+* Setup the directory for TypeScript - 
+* Install TypeScript, tslint, & @node/types
+
+                npm install -D typescript tslint @types/node
+
+* Generate a new tsconfig.json file: 
+                
+                npx tsc --init
+
+* tsconfig.json
+
+* native JavaScript code will be transpiled into dist dir.
+
+![outDir: "dist"](images/outDir.png)
+
+* lib: ["ES2015"]
+
+![lib: ["ES2015"]](images/lib.png)
+
+* moduleResolution: "node"
+
+![moduleResolution: "node"](images/moduleResolution.png)
+
+* Generate a tslint.json file: 
+
+        node_modules/.bin/tslint --init
+
+### continued.
+
+First thing, go into `package.json` file to add a script, allows us to transpile our TypeScript code into JavaScript code.
+
+        "scripts": {
+                "person-class": "tsc && node dist/person.class.js",
+                "test": "echo \"Error: no test specified\" && exit 1"
+        },
+
+> new script command, so when you run `npm run person-class`, it's going to run this command in quotes. Steps are `tsc` - typescript transpiler, then going to run node under the `dist/person.class.js` file.
+
