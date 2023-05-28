@@ -22,7 +22,7 @@ This exercise is intended to demonstrate how to install Angular's CLI and create
 
 * Add Bootstrap and jQuery:
 
-        ng install --save bootstrap jquery popper.js
+        npm install --save bootstrap jquery popper.js
 
 * Audit the application for potential npm errors and fix them 
 
@@ -99,3 +99,39 @@ First thing, go into `package.json` file to add a script, allows us to transpile
 
 > new script command, so when you run `npm run person-class`, it's going to run this command in quotes. Steps are `tsc` - typescript transpiler, then going to run node under the `dist/person.class.js` file.
 
+---
+
+## Assignment 1.5 - Components
+
+* Generate a new Angular application and name it profile-app
+
+                ng new profile-app
+
+* Install and wire Bootstrap and jquery
+
+                npm install --save bootstrap jquery
+
+                npm audit
+
+                npm audit fix
+
+* `angular.json`
+
+                "styles": [
+                        "src/styles.css",
+                        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                ],
+                "scripts": [
+                        "node_modules/jquery/dist/jquery.min.js",
+                        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                ]
+        
+* Using Angular’s CLI, generate two components: my-image and my-details
+
+                ng g c my-image
+
+                ng g c my-details
+
+* Add a picture of yourself to the applications “assets” directory 
+
+...   
