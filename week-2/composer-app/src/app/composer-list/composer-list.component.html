@@ -1,0 +1,31 @@
+<!--
+    Title: Composer-App composer-list Component
+    Arthur: Brooke Taylor
+    Date: 06/03/2023
+    Description: composer-list Component.
+-->
+
+
+<div class="col-8 m-auto">
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Composer</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+<!--
+  Using the *ngFor directive, loop over the array of composers and output the
+  results to a Bootstrap table
+-->
+    <tr *ngFor="let composer of composers">
+      <td>{{ composer.fullName }}</td>
+      <td>{{ composer.genre }}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
