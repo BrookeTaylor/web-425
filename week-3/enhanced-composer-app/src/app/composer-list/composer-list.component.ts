@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: Exercise 2.4 - Routing in Action
+; Title: Exercise 3.2 - Passing Data to Routes, Part 1
 ; Author: Professor Krasso
-; Date: 06/03/2023
+; Date: 06/09/2023
 ; Modified By: Brooks
 ; Description: composer-list Component
 ============================================
