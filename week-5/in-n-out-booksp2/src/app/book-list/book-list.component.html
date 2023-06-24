@@ -1,0 +1,78 @@
+<!--
+    Title: Exercise 5.3 - Data Tables
+    Arthur: Professor Krasso
+    Date: 06/24/2023
+    Description: book-list component
+-->
+
+<!-- Create a Flex row div and wrap the content -->
+<div fxLayout="column wrap">
+
+<!--
+  Give the data table a header <h2> and title of “Top 5 Favorite Books”
+  and a font color of green
+-->
+  <h2 fxFlex class="green">Top 5 Favorite Books</h2>
+
+  <table style="width: 100%;" fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
+
+    <tr mat-header-row *matHeaderRowDef="header"></tr>
+    <tr mat-row *matRowDef="let row; columns: header"></tr>
+
+    <ng-container matColumnDef="isbn">
+
+      <th mat-header-cell *matHeaderCellDef>ISBN</th>
+      <td mat-cell *matCellDef="let element">
+
+<!--
+  Wrap the isbn row with an anchor tag and Angular’s click directive
+  with a call to the showBooksDetails(isbn: string) function
+
+  Add CSS styling for color: blue
+-->
+        <a class="a-link blue" (click)="showBookDetails(element.isbn)">
+          {{ element.isbn }}
+        </a>
+      </td>
+
+    </ng-container>
+
+
+
+
+
+
+  <ng-container matColumnDef="title">
+
+    <th mat-header-cell *matHeaderCellDef>Title</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.title }}
+    </td>
+
+  </ng-container>
+
+
+
+  <ng-container matColumnDef="numOfPages">
+
+    <th mat-header-cell *matHeaderCellDef>Number of pages</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.numOfPages }}
+    </td>
+
+  </ng-container>
+
+
+
+  <ng-container matColumnDef="authors">
+
+    <th mat-header-cell *matHeaderCellDef>Author</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.authors.join(',') }}
+    </td>
+
+  </ng-container>
+
+  </table>
+
+</div>
