@@ -1,0 +1,18 @@
+/**
+    Title: Exercise 5.4 - Dialogs
+    Arthur: Professor Krasso
+    Date: 06/25/2023
+    Modified By: Brooks
+    Description: book-list component scss
+*/
+
+/* Add CSS styling for text-decoration: none; */
+.a-link {
+  text-decoration: none;
+}
+
+/* Add CSS styling for hover cursor: pointer; text-decoration: underline */
+.a-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
