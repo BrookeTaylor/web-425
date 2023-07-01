@@ -1,0 +1,17 @@
+/**
+    Title: Exercise 6.3 - Layouts
+    Arthur: Professor Krasso
+    Date: 06/30/2023
+    Modified By: Brooks
+    Description: Base-Layout component.
+*/
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
