@@ -1,0 +1,17 @@
+/**
+    Title: Exercise 7.2 - Reactive FOrms
+    Arthur: Professor Krasso
+    Date: 07/04/2023
+    Modified By: Brooks
+    Description: Base-Layout component.
+*/
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
